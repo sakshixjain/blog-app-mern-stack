@@ -1,22 +1,3 @@
-// import React,{useState} from 'react'
-
-// function CreatePost() {
-
-//     const [createPost, setCreatePost] = useState([]);
-//   return (
-//     <div>
-//   
-//         <h2>Create Blog</h2>
-//         <input type="text" placeholder="Blog Title" required/>
-//         <textarea rows="5" placeholder="Write your blog here..." required></textarea>
-//         <button>Publish</button>
-//     </div>
-//     </div>
-//   )
-// }
-
-// export default CreatePost
-
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -35,7 +16,7 @@ const CreatePost = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:9000/api/v1/posts/create', postData);
+      const response = await axios.post('http://localhost:9000/api/v1/posts/create/', postData);
       setResponseData(response.data);
       // Optionally, reset the form fields after a successful post
       setTitle('');
