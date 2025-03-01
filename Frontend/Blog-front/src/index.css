@@ -9,8 +9,14 @@ body {
     background-color: #2F3C7E;
     font-family: Arial, sans-serif;
     color: #FBEAEB;
-    
+    /* display: flex; */
+    width: 100%;
   
+  }
+  .blog-div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
   }
   
   .blog-box {
@@ -18,7 +24,10 @@ body {
     color: #2F3C7E;
     border-radius: 12px;
     padding: 20px;
-    width: 450px;
+    margin: 20px;
+    width: 460px;
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
     margin-top: 50px;
    
@@ -47,11 +56,12 @@ body {
   }
   
   button {
-    background-color: #2F3C7E;
-    color: #FBEAEB;
+    background-color: #FBEAEB;
+    color:  #2F3C7E;
     border: none;
     padding: 8px 16px;
     margin-top: 10px;
+    margin-left: 10px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 1rem;
@@ -59,7 +69,7 @@ body {
   }
   
   button:hover {
-    background-color: #1E2B5E;
+    background-color: #d6d7dd;
   }
   
   .read-more {
@@ -132,7 +142,7 @@ body {
   }
   
   input, textarea {
-    width: 450px;
+    width: 320px;
     padding: 10px;
     border: 2px solid #2F3C7E;
     border-radius: 8px;
@@ -146,21 +156,9 @@ body {
     resize: none;
   }
   
-  button {
-    background-color: #2F3C7E;
-    color: #FBEAEB;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    /* width: 450px; */
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out;
-  }
+
   
-  button:hover {
-    background-color: #1E2B5E;
-  }
+ 
   
   pre {
     background-color: #2F3C7E;
