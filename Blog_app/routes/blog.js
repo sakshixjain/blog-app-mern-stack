@@ -6,6 +6,9 @@ const {dummyLink, likePost,unLikePost} = require("../controllers/likeController"
 const {createComment} = require("../controllers/commentController");
 const {createPost, getAllPost} = require("../controllers/PostController");
 
+const {deletePost} = require('../controllers/DeletePost');
+
+// DELETE route for deleting blog
 
 // mapping
 router.get("/dummyroute", dummyLink);
@@ -14,5 +17,6 @@ router.post("/posts/create",createPost);
 router.get("/posts",getAllPost);
 router.post("/likes/like",likePost);
 router.post("/likes/unlike",unLikePost);
+router.delete("/delete/:id", deletePost);
 
 module.exports = router;
